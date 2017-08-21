@@ -1,0 +1,70 @@
+Ansible Ad Hoc commands:
+========================
+
+root@NetworkAutomation-1:~# ansible S1 -m raw -a "show version" -u john -k
+
+root@NetworkAutomation-1:~# ansible S1 -m raw -a "show version" -u david -k
+
+root@NetworkAutomation-1:~# ansible S1 -m raw -a "show run" -u david -k
+
+
+### MANIPULATION USING GREP ###
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show version" -u john -k
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show version" -u john -k | grep flash0
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show version" -u john -k | grep 'SUCCESS\|Software'
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show version" -u john -k | grep 'SUCCESS\|Version'
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show run" -u john -k | grep 'username'
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show run" -u john -k | grep 'SUCCESS\|username'
+
+
+
+
+###SENDS IT TO A TXT FILE #####
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show run" -u john -k | grep 'username' > usernames.txt
+
+root@NetworkAutomation-1:~# cat usernames.txt
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show run" -u john -k > shrun.txt
+
+root@NetworkAutomation-1:~# cat shrun.txt
+
+root@NetworkAutomation-1:~# more shrun.txt
+
+root@NetworkAutomation-1:~# ansible gns3-core -i ./gns3hosts -m raw -a "show ver" -u john -k > shver.txt
+
+root@NetworkAutomation-1:~# more shver.txt | grep Version
+
+root@NetworkAutomation-1:~# more shver.txt | grep 'SUCCESS\|Version'
+
+
+####ARP####
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show arp" -u john -k 
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show arp" -u john -k | grep 71
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show arp" -u john -k | grep 'SUCCESS\|71'
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show arp" -u john -k | grep 'SUCCESS\|\.71'
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show mac address-table" -u john -k 
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show mac address-table" -u john -k | grep 7a
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show mac address-table" -u john -k | grep 'SUCCESS\|fe7a'
+
+
+
+### MAC ADDRESS-TABLE #####
+
+root@NetworkAutomation-1:~# ansible all -i gns3hosts -m raw -a "show mac address-table" -u david -k | grep 'SUCCESS\|fe7a'
+
+root@NetworkAutomation-1:~# cat gns3hosts
+
+
