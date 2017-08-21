@@ -1,0 +1,141 @@
+S3 | SUCCESS | rc=0 >>
+
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************Shared connection to s3 closed.
+
+S5 | SUCCESS | rc=0 >>
+
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************Shared connection to s5 closed.
+
+S4 | SUCCESS | rc=0 >>
+
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************Shared connection to s4 closed.
+
+S2 | SUCCESS | rc=0 >>
+
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************Shared connection to s2 closed.
+
+S1 | SUCCESS | rc=0 >>
+
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Gi0/0, Gi0/1, Gi0/2, Gi0/3
+                                                Gi1/0, Gi1/1, Gi1/2, Gi1/3
+                                                Gi2/0, Gi2/1, Gi2/2, Gi2/3
+                                                Gi3/0, Gi3/1, Gi3/2, Gi3/3
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************Shared connection to s1 closed.
+
+S5 | SUCCESS | rc=0 >>
+   1    0050.7966.6802    DYNAMIC     Gi0/0
+S4 | SUCCESS | rc=0 >>
+   1    0050.7966.6802    DYNAMIC     Gi0/0
+S2 | SUCCESS | rc=0 >>
+   1    0050.7966.6802    DYNAMIC     Gi1/0
+S3 | SUCCESS | rc=0 >>
+   1    0050.7966.6802    DYNAMIC     Gi1/0
+S1 | SUCCESS | rc=0 >>
+   1    0050.7966.6802    DYNAMIC     Gi0/0
+S5 | SUCCESS | rc=0 >>
+Internet  192.168.122.9           3   0050.7966.6802  ARPA   Vlan1
+S3 | SUCCESS | rc=0 >>
+Internet  192.168.122.9           3   0050.7966.6802  ARPA   Vlan1
+S2 | SUCCESS | rc=0 >>
+Internet  192.168.122.9           3   0050.7966.6802  ARPA   Vlan1
+S4 | SUCCESS | rc=0 >>
+Internet  192.168.122.9           3   0050.7966.6802  ARPA   Vlan1
+S1 | SUCCESS | rc=0 >>
+Internet  192.168.122.9           3   0050.7966.6802  ARPA   Vlan1
+S4 | SUCCESS | rc=0 >>
+Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(4.0.55)E, TEST ENGINEERING ESTG_WEEKLY BUILD, synced to  END_OF_FLO_ISP
+S5 | SUCCESS | rc=0 >>
+Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(4.0.55)E, TEST ENGINEERING ESTG_WEEKLY BUILD, synced to  END_OF_FLO_ISP
+S3 | SUCCESS | rc=0 >>
+Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(4.0.55)E, TEST ENGINEERING ESTG_WEEKLY BUILD, synced to  END_OF_FLO_ISP
+S2 | SUCCESS | rc=0 >>
+Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(4.0.55)E, TEST ENGINEERING ESTG_WEEKLY BUILD, synced to  END_OF_FLO_ISP
+S1 | SUCCESS | rc=0 >>
+Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(4.0.55)E, TEST ENGINEERING ESTG_WEEKLY BUILD, synced to  END_OF_FLO_ISP
+ansible all -m raw -a ping 192.168.122.72 -u john -k
