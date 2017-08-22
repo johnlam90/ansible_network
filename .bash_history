@@ -104,3 +104,112 @@ ansible all -m raw -a "show ip ospf neigh" -u john -k
 ansible all -m raw -a "show ip ospf neigh" -u john -k | grep 'SUCCESS\|DR'
 ansible all -m raw -a "show mac address-table interface g1/0" -u john -k
 ansible edge -m raw -a "show mac address-table interface g1/0" -u john -k
+LS
+ls
+cat /etc/hosts
+nano  /etc/hosts
+ansible-playbook ospf.yml 
+ansible all -m raw -a "wr" -u john -k
+ansible all -m raw -a "sh ip ospf neigh" -u john -k 
+ansible all -m raw -a "sh vlan ip" -u john -k 
+ansible all -m raw -a "sh vlan br" -u john -k 
+ansible all -m raw -a "sh ip int br" -u john -k 
+ansible all -m raw -a "sh int g0/0" -u john -k | grep 'SUCCESS\|is up'  
+ansible all -m raw -a "sh ip arp" -u john -k    
+ping 192.168.122.200
+ansible all -m raw -a "ping 192.168.122.71" -u john -k    
+ping 192.168.122.71
+ping 192.168.122.72
+ping 192.168.122.73
+ansible all -m raw -a "ping 192.168.122.72" -u john -k    
+echo "ansible all -m raw -a "ping 192.168.122.72" -u john -k"    
+echo ansible all -m raw -a "ping 192.168.122.72" -u john -k    
+echo ansible all -m raw -a "ping 192.168.122.72" -u john -k  >> log.txt
+cat log.txt 
+ansible all -m raw -a "ping 192.168.122.71" -u john -k  
+apt-get install git-core 
+apt-get install git
+apt-get update 
+apt-get git 
+apt-get install git 
+git init 
+git add .
+git remote add origin https://github.com/lam42/ansible_network.git
+git remote -v
+git add .
+git commit -m "New ansible Networking project"
+git config --global user.email "johnlam90@gmail.com"
+git config --global user.name "lam42"
+git commit -m "New ansible Networking project"
+git push origin master 
+git push -u origin master 
+git pull origin master 
+git push -u origin master 
+ls
+git pull origin master 
+git pull -u origin master 
+git pull  
+git pull origin master 
+git intit 
+git init 
+git add .
+git pull origin master
+ls
+cat ad-hoc-commands.txt 
+ls -l
+ls -lha
+ls -lha | cut -d" " -f2
+ls -lha | cut -d" " -f3
+ls -lha | cut -d" " -f5
+ls -lha | cut -d" " -f6
+ls -lha | cut -d" " -f7
+ls -lha | cut -d" " -f8
+ls -lha | cut -d" " -f9
+touch .gitignore
+ls -lha | cut -d" " -f9 >> gitignore
+cat gitignore
+nano .gitignore
+nano gitignore
+git add .
+git push origin master 
+git push -u origin master 
+ls -lha | cut -d" " -f9 
+ls -lha 
+ls -lha | cut -d" " -f9 
+ls -lha 
+ls -lha | cut -d" " -f10
+ls -lha | cut -d" " -f6
+ls -lha | cut -d" " -f7
+ls -lha | cut -d" " -f8
+ls -lha | cut -d" " -f9
+cp /etc/hosts  hosts 
+cat hosts 
+ls
+ping S1
+nano hosts 
+cp hosts /etc/hosts
+cat /etc/hosts
+cat hosts
+rm hosts
+nano hosts
+cat hosts
+ping S1
+ping S2
+ping S5
+nano /etc/hosts 
+nano hosts 
+ping PC1
+ping PC2
+ping PC3
+nano hosts 
+nano /etc/hosts 
+nano hosts 
+ping PC3
+ansible-playbook ospf.yml 
+nano ospf.yml 
+ssh john@S1
+ping S1
+ping S2
+ping S3
+ping S4
+ping S5
