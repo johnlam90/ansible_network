@@ -213,3 +213,100 @@ ping S2
 ping S3
 ping S4
 ping S5
+cat /etc/hosts
+ping S1
+ping S2
+ansible-playbook ospf.yml 
+ls
+git pull
+apt-get install git
+apt-get update 
+apt-get update git
+apt-get install git -y
+ssh john@S1
+ssh john@S2
+ssh john@S3
+ssh john@S4
+ssh john@S5
+ansible-playbook ospf.yml 
+ssh john@S5
+ansible-playbook S5 ospf.yml 
+ansible-playbook ospf.yml 
+ansible -m raw -a "show version" -u john -k | grep 'SUCCESS\|Version'
+ansible hosts -m raw -a "show version" -u john -k | grep 'SUCCESS\|Version'
+ls hosts 
+ansible all -m raw -a "show version" -u john -k | grep 'SUCCESS\|Version'
+ansible-playbook ospf.yml -vvvv
+ssh john@S5
+ping 192.168.122.1
+ping 192.168.122.2
+ping 192.168.122.3
+ansible all -m raw -a "show mac address-table interface g1/0" -u john -k
+ansible edge -m raw -a "show mac address-table interface g1/0" -u john -k
+ansible edge -m raw -a "show mac address-table interface g1/0" -u john -k | grep 'SUCCESS\|6802'
+ansible edge -m raw -a "show mac address-table interface g1/0" -u john -k | grep 'SUCCESS\|6802' >> mac-add.txt
+cat mac-add.txt | grep 6802 >> pcmac
+cat pcmac 
+cat mac-add.txt | grep 'S3\|6802' > pcmac
+cat pcmac 
+ansible edge -m raw -a "show mac address-table interface g1/0" -u john -k | grep 'SUCCESS\|6802\|6800\|6801'
+ansible edge -m raw -a "show mac address-table interface g1/0" -u john -k | grep 'SUCCESS\|6802'
+which git
+git inti 
+git init 
+git pull origin master 
+l
+sudo mkdir playbooks 
+mkdir playbooks 
+cd playbooks/
+mdir roles 
+mkdir roles 
+cd roles/
+mkdir common 
+mkdir ospf 
+cd common/
+mkdir tasks templates vars handlers
+ls
+cd handlers/
+touch main.yml
+cd ..
+cd tasks/
+touch main.yml
+cd ..
+ks
+ls
+cd ..
+apt-get install tree -y
+cd ..
+tree playbooks/
+ls
+cd playbooks/
+ls
+touch playbook.yml 
+ls
+nano hosts 
+touch hosts 
+ls
+cd ..
+ls
+cp ansible.cfg playbooks/ansible.cfg
+cd playbooks/
+ls
+cat ansible.cfg 
+ls
+nano hosts 
+cd roles/
+cd ospf/
+mkdir vars templates tasks handlers
+ls
+touch handlers/main.yml
+touch tasks/main.yml
+cd ..
+ls
+tree playbooks/
+git push -u origin  master 
+ls -alh 
+git add .
+git commit -m "playbook structure added"
+git push -u origin master 
+ls
